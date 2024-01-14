@@ -5,12 +5,13 @@ import java.util.List;
 import kodlamaio.rentACar.business.abstracts.BrandService;
 import kodlamaio.rentACar.dataAccess.abstracts.BrandRepository;
 import kodlamaio.rentACar.entities.concretes.Brand;
-import lombok.NoArgsConstructor;
+import lombok.AllArgsConstructor;
 
-@NoArgsConstructor
+
+@AllArgsConstructor
 public class BrandManager implements BrandService{
-	private BrandRepository  brandRepository;
-	
+	private BrandRepository brandRepository;
+	// Loosly Coupled
 	
 	@Override
 	public List<Brand> getAll() {
